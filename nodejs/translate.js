@@ -93,12 +93,9 @@ function getCookieString() {
 
 // 生成sign
 function getSign(e) {
-    // var t = md5(uG)
-    //   , r = "" + (new Date).getTime()
-    //   , i = r + parseInt(10 * Math.random(), 10);
-      var t = md5(uG)
-      , r = 1545272201118
-      , i = 15452722011180;
+    var t = md5(uG)
+      , r = "" + (new Date).getTime()
+      , i = r + parseInt(10 * Math.random(), 10);
 
     return {
         ts: r,
